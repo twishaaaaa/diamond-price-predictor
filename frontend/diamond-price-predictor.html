@@ -948,7 +948,7 @@
   }
 
   // ─── Predict ───
-  function predict() {
+  async function predict() {
     const btn = document.getElementById('predictBtn');
     btn.classList.add('loading');
     btn.innerHTML = '<span class="spinner"></span> Analyzing…';
@@ -981,7 +981,7 @@
     };
 
     try {
-      const res  = await fetch('http://127.0.0.1:8000/predict', {
+      const res  = await fetch('https://twishaaaaas-diamond-price-predictor.hf.space/predict', {
         method:  'POST',
         headers: {'Content-Type': 'application/json'},
         body:    JSON.stringify(payload)

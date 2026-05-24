@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import joblib
 import numpy as np
-
+import os
 
 # Auto-train model if not found
 if not os.path.exists("diamond_model.pkl"):
