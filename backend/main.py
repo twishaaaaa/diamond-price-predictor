@@ -4,6 +4,10 @@ from pydantic import BaseModel
 import joblib
 import numpy as np
 
+
+# Auto-train model if not found
+if not os.path.exists("diamond_model.pkl"):
+    import train
 app = FastAPI(title="Diamond Price Predictor API")
 
 # Allow frontend to call this API
