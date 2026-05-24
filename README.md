@@ -24,6 +24,7 @@ A real-world Machine Learning web application that predicts diamond prices based
 
 ### ⚡ Live API Docs
 ![API](assets/api.png)
+
 ---
 
 ## 🧠 What This Project Does
