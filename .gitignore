@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+.env
+notebooks/.ipynb_checkpoints/
+data/diamonds.csv
+backend/diamond_model.pkl
